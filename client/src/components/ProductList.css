@@ -1,0 +1,17 @@
+/* ProductList.css */
+
+/* Container for the product list */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2 columns in each row */
+    gap: 16px; /* Space between cards */
+    padding: 16px;
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 768px) {
+    .product-list {
+      grid-template-columns: 1fr; /* Stack products in 1 column on smaller screens */
+    }
+  }
+  
