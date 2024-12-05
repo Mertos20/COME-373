@@ -1,15 +1,28 @@
 
-.product-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 16px; 
-    padding: 16px;
-  }
-  
+.all-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 16px; 
+}
 
-  @media (max-width: 768px) {
-    .product-list {
-      grid-template-columns: 1fr; 
-    }
+
+.popular-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 16px; 
+}
+
+
+@media (max-width: 768px) {
+  .all-products-grid, .popular-products-grid {
+    grid-template-columns: 1fr; 
   }
-  
+}
+
+
+.product-title, .product-subtitle {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  color: #333;
+}

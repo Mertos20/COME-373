@@ -22,7 +22,7 @@ app.get('/api/data', async (req, res) => {
   const { category } = req.query; 
 
   try {
-    let query = 'SELECT p.name AS product_name, p.price, p.ImageURL, p.Description, c.name AS category_name FROM product p JOIN categories c ON c.categoryid = p.categoryid';
+    let query = 'SELECT p.name AS product_name, p.price,p.stockquantity, p.ImageURL, p.Description, c.name AS category_name FROM product p JOIN categories c ON c.categoryid = p.categoryid';
     const queryParams = [];
 
     if (category) {

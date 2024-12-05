@@ -25,18 +25,18 @@ const Navbar = ({ setFilter }) => {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <a  className=" navbar-text "href="/" > Zümrüt Doğal Taş</a>
+        <a  className=" navbar-text "href="/" > Zümrüt Doğaltaş</a>
        
       </div>
       <ul className="navbar-links">
         <li>
-          <Link to="/" className="nav-link">Anasayfa</Link>
+          <Link to="/" className="nav-link">Home</Link>
         </li>
         <li>
-          <Link to="/about" className="nav-link">Hakkımızda</Link>
+          <Link to="/about" className="nav-link">About</Link>
         </li>
         <li>
-          <Link to="/contact" className="nav-link">İletişim</Link>
+          <Link to="/contact" className="nav-link">Contact</Link>
         </li>
         {isHomePage && (  
           <li className="navbar-dropdown">
@@ -45,7 +45,7 @@ const Navbar = ({ setFilter }) => {
               value={selectedCategory}
               className="navbar-dropdown-select"
             >
-              <option value="">Tüm Kategoriler</option>
+              <option value="">All</option>
               {categories.map((category, index) => (
                 <option key={index} value={category}>
                   {category}

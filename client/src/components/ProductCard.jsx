@@ -20,7 +20,7 @@ const ProductCard = ({ product_name, product_description, product_price, product
           state={{ product_name, product_description, product_price, product_image, product_category }}
           className="product-card-link"
         >
-          Görüntüle
+          SHOW
         </Link>
       </div>
     </div>
