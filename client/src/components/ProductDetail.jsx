@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import './ProductDetail.css'; // CSS dosyasını dahil edin
+import './ProductDetail.css'; 
 
 const ProductDetail = () => {
   const location = useLocation();
@@ -8,12 +8,12 @@ const ProductDetail = () => {
 
   return (
     <div className="product-detail-container">
-      {/* Ürün Görseli */}
+      
       <div className="image-container">
         <img src={product_image} alt={product_name} />
       </div>
 
-      {/* Ürün Detayları */}
+      
       <div className="details-container">
         <div className="detail-item">
           <span className="detail-title">Name:</span>

@@ -1,10 +1,10 @@
-/* ProductDetail.css */
+
 .product-detail-container {
     max-width: 1024px;
     margin: 32px auto;
     padding: 16px;
     display: flex;
-    gap: 128px; /* Resim ve detaylar arasında boşluk */
+    gap: 128px; 
   }
   
   .product-detail-container .image-container {
@@ -22,30 +22,30 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 52px; /* Detaylar arasında boşluk */
-    border: 2px solid #ddd; /* Çerçeve rengi */
-    border-radius: 8px; /* Çerçeve köşelerini yuvarla */
-    padding: 16px; /* İçerik ve çerçeve arasındaki boşluk */
-    background-color: #f9f9f9; /* Çerçeve iç arka plan rengi */
+    gap: 52px;
+    border: 2px solid #ddd; 
+    border-radius: 8px; 
+    padding: 16px; 
+    background-color: #f9f9f9; 
   }
   
   .product-detail-container .detail-item {
     display: flex;
-    flex-direction: column; /* Başlık ve içerik dikey hizalı */
-    align-items: center; /* İçeriği ortala */
+    flex-direction: column; 
+    align-items: center; 
     margin-bottom: 12px;
   }
   
   .product-detail-container .detail-title {
     font-weight: bold;
     color: #333;
-    margin-bottom: 4px; /* Başlık ve içerik arasındaki boşluk */
-    text-align: center; /* Başlığı ortala */
+    margin-bottom: 4px; 
+    text-align: center; 
   }
   
   .product-detail-container .detail-content {
     color: #555;
-    text-align: center; /* İçeriği ortala */
+    text-align: center; 
     font-weight: bold;
 
   }

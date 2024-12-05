@@ -12,7 +12,7 @@ const ProductList = ({ filter }) => {
       try {
         const response = await axios.get('http://localhost:5001/api/data', {
           params: {
-            category: filter, // Kategori parametresini gönderiyoruz
+            category: filter, 
           },
         });
         setProducts(response.data);
@@ -23,7 +23,7 @@ const ProductList = ({ filter }) => {
     };
 
     fetchProducts();
-  }, [filter]);  // filter değiştiğinde ürünleri yeniden çek
+  }, [filter]);  
 
   if (loading) {
     return <div>Yükleniyor...</div>;

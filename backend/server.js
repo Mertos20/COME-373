@@ -17,20 +17,20 @@ const client = new Client({
 
 client.connect();
 
-// API Endpoint with category filter
+
 app.get('/api/data', async (req, res) => {
-  const { category } = req.query;  // Kategori parametresini al
+  const { category } = req.query; 
 
   try {
     let query = 'SELECT p.name AS product_name, p.price, p.ImageURL, p.Description, c.name AS category_name FROM product p JOIN categories c ON c.categoryid = p.categoryid';
     const queryParams = [];
 
     if (category) {
-      query += ' WHERE c.name = $1';  // Kategori varsa, sorguyu filtrele
+      query += ' WHERE c.name = $1';  
       queryParams.push(category);
     }
 
-    const result = await client.query(query, queryParams);  // Kategori varsa, parametreyi ekle
+    const result = await client.query(query, queryParams);  
     res.json(result.rows);
   } catch (error) {
     console.error('Error fetching data', error);
@@ -38,11 +38,11 @@ app.get('/api/data', async (req, res) => {
   }
 });
 
-// Kategorileri listeleyen endpoint
+
 app.get('/api/categories', async (req, res) => {
   try {
     const result = await client.query('SELECT name FROM categories');
-    res.json(result.rows.map(row => row.name));  // Sadece kategori isimlerini gönder
+    res.json(result.rows.map(row => row.name)); 
   } catch (error) {
     console.error('Error fetching categories', error);
     res.status(500).send('Internal Server Error');

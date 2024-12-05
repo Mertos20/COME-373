@@ -1,36 +1,35 @@
-/* Navbar Container */
+
 .navbar {
-    position: fixed;  /* Navbar'ı sabit hale getirir */
-    top: 0;  /* Ekranın üst kısmına sabitler */
+    position: fixed;  
+    top: 0;  
     left: 0;
-    width: 98%;  /* Navbar tüm ekran genişliği boyunca yayılır */
+    width: 98%;  
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px 24px;
-    background-color: #4CAF50; /* Yeşil bir tema için */
+    background-color: #4CAF50; 
     color: white;
     font-family: Arial, sans-serif;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Altına hafif bir gölge ekler */
-    z-index: 1000; /* Navbar'ın diğer öğelerin önünde görünmesini sağlar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
   }
   
-  /* Sol taraftaki marka */
+  
   .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
   }
   
-  /* Sağ taraftaki linkler */
+  
   .navbar-links {
     display: flex;
     list-style: none;
-    gap: 16px; /* Linkler arasındaki boşluk */
+    gap: 16px; 
     margin: 0;
     padding: 0;
   }
   
-  /* Linkler */
   .navbar-links .nav-link {
     text-decoration: none;
     color: white;
@@ -39,19 +38,19 @@
     transition: color 0.3s;
   }
   
-  /* Hover efekti */
+
   .navbar-links .nav-link:hover {
-    color: #f7d794; /* Açık sarı hover rengi */
+    color: #f7d794; 
   }
   
-  /* Dropdown menü (isteğe bağlı) */
+  
   .navbar-dropdown {
-    margin-left: auto;  /* Dropdown menüsünü sağa yerleştirir */
+    margin-left: auto;  
   }
   
-  /* Sayfa içeriği için ekstra alan */
+  
   .App {
-    padding-top: 60px;  /* Navbar'ın boyutuna göre üstte boşluk bırakır */
+    padding-top: 60px;  
   }
   
   .navbar-text{

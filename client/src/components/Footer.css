@@ -1,18 +1,18 @@
-/* Footer Container */
+
 footer {
-    background-color: green;  /* Arka plan rengini yeşil yapıyoruz */
-    color: white;  /* Yazı rengini beyaz yapıyoruz */
-    text-align: center;  /* Yazıyı ortalar */
+    background-color: green;  
+    color: white; 
+    text-align: center;  
     padding: 10px;
-    position: fixed;  /* Footer'ı sabitler */
-    bottom: 0;  /* Sayfanın en alt kısmına yerleştirir */
-    left: 0;  /* Soldan başlatıyoruz */
-    width: 100%;  /* Footer'ı tüm ekranın genişliği kadar yapar */
-    z-index: 1000;  /* Footer'ın diğer öğelerin önünde görünmesini sağlar */
+    position: fixed;  
+    bottom: 0;  
+    left: 0;  
+    width: 100%;  
+    z-index: 1000;  
   }
   
-  /* Sayfa içeriği için ekstra alan (footer tarafından kaplanmaması için) */
+  
   .App {
-    padding-bottom: 40px;  /* Footer'ın üzerine gelmesini engellemek için alt boşluk ekler */
+    padding-bottom: 40px;  
   }
   

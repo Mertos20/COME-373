@@ -9,16 +9,16 @@ import About from './pages/About';
 import './App.css';
 
 function App() {
-  const [filter, setFilter] = useState('');  // Filtre state'i
+  const [filter, setFilter] = useState('');  
 
   return (
     <Router>
-      <Navbar setFilter={setFilter} />  {/* Navbar'a setFilter fonksiyonunu veriyoruz */}
+      <Navbar setFilter={setFilter} />  
       <div className="App">
         <Routes>
           <Route 
             path="/" 
-            element={<ProductList filter={filter} />}  // Filtreyi ProductList'e veriyoruz
+            element={<ProductList filter={filter} />}  
           />
           <Route path="/product/:productId" element={<ProductDetail />} />
           <Route path="/contact" element={<Contact />} />

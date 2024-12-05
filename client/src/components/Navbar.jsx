@@ -5,7 +5,7 @@ import './Navbar.css';
 const Navbar = ({ setFilter }) => {
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('');
-  const location = useLocation();  // Şu anki sayfayı alıyoruz
+  const location = useLocation(); 
 
   useEffect(() => {
     fetch('http://localhost:5001/api/categories')
@@ -16,10 +16,10 @@ const Navbar = ({ setFilter }) => {
   const handleCategoryChange = (event) => {
     const selected = event.target.value;
     setSelectedCategory(selected);
-    setFilter(selected);  // Filtreyi navbar'dan güncelliyoruz
+    setFilter(selected);  
   };
 
-  // Anasayfada olup olmadığımızı kontrol ediyoruz
+  
   const isHomePage = location.pathname === '/';
 
   return (
@@ -38,7 +38,7 @@ const Navbar = ({ setFilter }) => {
         <li>
           <Link to="/contact" className="nav-link">İletişim</Link>
         </li>
-        {isHomePage && (  // Sadece anasayfada dropdown menüsünü gösteriyoruz
+        {isHomePage && (  
           <li className="navbar-dropdown">
             <select
               onChange={handleCategoryChange}
