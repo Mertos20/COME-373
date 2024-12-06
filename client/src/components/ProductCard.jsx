@@ -13,7 +13,7 @@ const ProductCard = ({ product_name, product_description, product_price, product
       <div className="product-card-content">
         <h3>{product_name}</h3>
         <p>{product_category}</p>
-        <p>{product_description}</p>
+        
         <p>{product_price} TL</p>
         <Link
           to={`/product/${product_name}`}
