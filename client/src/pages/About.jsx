@@ -1,14 +1,33 @@
 import React from 'react';
+import irmak from '../images/irmak.jpg';
+import irem from '../images/irem.jpg';
+import './about.css'
 
 const About = () => {
   return (
     <div className="about-container">
-      <h1 className="about-title">Hakkımızda</h1>
-      <p className="about-description">
-        Zümrüt Doğal Taş, doğal taşların estetik ve kalitesini bir araya getirerek
-        yaşam alanlarınızı güzelleştirir. Yılların tecrübesiyle, müşteri memnuniyetini
-        en üst düzeyde tutuyoruz.
-      </p>
+      <section className="team">
+        <div className="team-member">
+          <img src={irmak} alt="Irmak Arı" />
+          <h3>Irmak Arı</h3>
+          <p>202103001037</p>
+        </div>
+        <div className="team-member">
+          <img src="" alt="Mehmet Ertin" />
+          <h3>Mehmet Ertin</h3>
+          <p>202103001034</p>
+        </div>
+        <div className="team-member">
+          <img src="" alt="Mert Bektaş" />
+          <h3>Mert Bektaş</h3>
+          <p>202103001030</p>
+        </div>
+        <div className="team-member">
+          <img src={irem} alt="İrem Türk" />
+          <h3>İrem Türk</h3>
+          <p>202103001082</p>
+        </div>
+      </section>
     </div>
   );
 };

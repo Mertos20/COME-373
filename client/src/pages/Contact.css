@@ -18,13 +18,24 @@
   }
   
   .contact-info {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .contact-info li {
-    font-size: 1rem;
+    max-width: 500px;
+}
+.contact-info h2 {
+    color: #00796b;
+}
+.contact-info p {
     color: #333;
-    margin-bottom: 8px;
-  }
-  
+    margin-bottom: 10px;
+}
+.contact-info a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #00796b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.contact-info a:hover {
+    background-color: #00574b;
+}
